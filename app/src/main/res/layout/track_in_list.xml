@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/poster_iv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/placeholder"
+        android:tint="@color/transparent_black"
+        app:layout_constraintDimensionRatio="w, 1:1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tracks_name"
+        style="@style/FragmentPlayerText.TracksName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Name for song, maybe short maybe long"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/poster_iv" />
+
+    <TextView
+        android:id="@+id/artists_name"
+        style="@style/FragmentPlayerText.ArtistsName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:text="Artist's name"
+        app:layout_constraintTop_toBottomOf="@id/tracks_name"
+        app:layout_constraintStart_toEndOf="@id/poster_iv"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
