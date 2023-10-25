@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
     private val serviceIntent: Intent by lazy { Intent(this, AudioPlayerService::class.java) }
 
     private val viewModel: MainVM by viewModel()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -28,8 +29,7 @@ class MainActivity : AppCompatActivity() {
                 lifecycleScope.launch(Dispatchers.IO) {
                     viewModel.getById(it.id).let { track ->
                         withContext(Dispatchers.Main) {
-                            serviceIntent.putExtra("TRACK_NAME", track?.trackName)
-                                .putExtra("ARTIST_NAME", track?.artistName)
+
                             startService(serviceIntent)
                             Toast.makeText(this@MainActivity, "Track name is ${ track?.trackName }", Toast.LENGTH_SHORT).show()
                         }

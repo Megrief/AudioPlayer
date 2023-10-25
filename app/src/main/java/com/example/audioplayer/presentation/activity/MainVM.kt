@@ -57,6 +57,7 @@ class MainVM(
             mBound = false
         }
     }
+
     fun bind(context: Context) {
         Intent(context, AudioPlayerService::class.java).also { intent ->
             context.bindService(intent, serviceConnection, Context.BIND_AUTO_CREATE)
