@@ -15,14 +15,17 @@
         android:name=".app.App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.AudioPlayer"
+        android:theme="@style/Base.Theme.AudioPlayer"
         tools:targetApi="31" >
 
         <service
             android:name=".presentation.service.AudioPlayerService"
-            android:foregroundServiceType="mediaPlayback"
+            android:foregroundServiceType="dataSync"
             android:enabled="true"
             android:exported="false" >
+            <intent-filter>
+
+            </intent-filter>
         </service>
 
         <activity

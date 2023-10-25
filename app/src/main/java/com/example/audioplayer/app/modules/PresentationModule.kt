@@ -7,7 +7,8 @@ import org.koin.dsl.module
 val presentationModule = module {
     viewModel {
         MainVM(
-            storageManager = get()
+            storageManager = get(),
+            playerManager = get()
         )
     }
 }
