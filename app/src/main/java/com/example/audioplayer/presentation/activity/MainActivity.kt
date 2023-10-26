@@ -17,7 +17,9 @@ import org.koin.androidx.viewmodel.ext.android.viewModel
 class MainActivity : AppCompatActivity() {
     private val binding: ActivityMainBinding by lazy { ActivityMainBinding.inflate(LayoutInflater.from(this)) }
 
-    private val serviceIntent: Intent by lazy { Intent(this, AudioPlayerService::class.java) }
+    private val serviceIntent: Intent by lazy {
+        Intent(this, AudioPlayerService::class.java).apply { action = START_INTENT }
+    }
 
     private val viewModel: MainVM by viewModel()
 
@@ -54,4 +56,7 @@ class MainActivity : AppCompatActivity() {
         viewModel.unbind(this)
     }
 
+    companion object {
+        const val START_INTENT = "START_INTENT"
+    }
 }
