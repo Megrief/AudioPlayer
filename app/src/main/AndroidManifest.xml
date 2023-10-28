@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
@@ -8,27 +8,40 @@
     <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
 
     <application
+        android:name=".app.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".app.App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.AudioPlayer"
-        tools:targetApi="31" >
+        tools:targetApi="31">
+        <receiver
+            android:name=".presentation.AudioPlayerReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+
+                <action android:name="player.action.PLAY" />
+                <action android:name="player.action.PAUSE" />
+                <action android:name="player.action.NEXT" />
+                <action android:name="player.action.PREV" />
+                <action android:name="player.action.START_SERVICE" />
+                <action android:name="player.action.STOP_SERVICE" />
+            </intent-filter>
+        </receiver>
 
         <service
             android:name=".presentation.service.AudioPlayerService"
-            android:foregroundServiceType="mediaPlayback"
             android:enabled="true"
-            android:exported="false" >
-        </service>
+            android:exported="false"
+            android:foregroundServiceType="mediaPlayback" />
 
         <activity
             android:name=".presentation.activity.MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -14,37 +14,71 @@ class PlayerManager(
     private val storageManager: StorageManager,
     private val context: Context
 ) {
-
+    private val scope = CoroutineScope(Dispatchers.IO + Job())
     private var currentState = DEFAULT
 
-    fun configurePlayer(
-        onCompletionListener: () -> Unit
-    ) {
+    private var _onNextListener: (() -> Long)? = null
+    private val onNextListener: () -> Long
+        get() = _onNextListener!!
+
+    private var _onPreviousListener: (() -> Long)? = null
+    private val onPreviousListener: () -> Long
+        get() = _onPreviousListener!!
+
+    init {
         mediaPlayer.setOnPreparedListener {
             currentState = PREPARED
         }
         mediaPlayer.setOnCompletionListener {
             it.reset()
             currentState = DEFAULT
-            onCompletionListener()
+            scope.launch {
+                val uri = storageManager.getUriById(onNextListener()).single()
+                if (uri != null) play(uri)
+            }
         }
     }
 
-    fun play(id: Long) {
+    fun configurePlayer(
+        onNextListener: () -> Long,
+        onPreviousListener: () -> Long
+    ) {
+        _onNextListener = onNextListener
+        _onPreviousListener = onPreviousListener
+    }
 
-        CoroutineScope(Dispatchers.IO + Job()).launch {
-            if (currentState == PLAYING || currentState == PAUSED) {
-                mediaPlayer.stop()
-                mediaPlayer.reset()
-            }
-            val uri = getUriById(id)
-            if (uri != null) mediaPlayer.setDataSource(context, uri)
-            mediaPlayer.prepare()
+    fun next() {
+        scope.launch {
+            val uri = storageManager.getUriById(onNextListener()).single()
+            if (uri != null) play(uri)
+        }
+    }
+
+    fun previous() {
+        scope.launch {
+            val uri = storageManager.getUriById(onPreviousListener()).single()
+            if (uri != null) play(uri)
+        }
+    }
+
+    fun play(uri: Uri) {
+        if (currentState == PLAYING || currentState == PAUSED) {
+            mediaPlayer.stop()
+            mediaPlayer.reset()
+            currentState = DEFAULT
+        }
+        mediaPlayer.setDataSource(context, uri)
+        mediaPlayer.prepare()
+        mediaPlayer.start()
+        currentState = PLAYING
+    }
+
+    fun playOnService() {
+        if (currentState == PAUSED) {
             mediaPlayer.start()
             currentState = PLAYING
         }
     }
-
     fun pause() {
         if (currentState == PLAYING) {
             mediaPlayer.pause()
@@ -52,8 +86,10 @@ class PlayerManager(
         }
     }
 
-    private suspend fun getUriById(id: Long): Uri? {
-        return storageManager.getUriById(id).single()
+    fun stop() {
+        mediaPlayer.stop()
+        mediaPlayer.reset()
+        currentState = DEFAULT
     }
 
     companion object {

@@ -11,13 +11,8 @@ import android.os.Binder
 import android.os.IBinder
 import androidx.annotation.DrawableRes
 import com.example.audioplayer.R
-import com.example.audioplayer.data.PlayerManager
-import com.example.audioplayer.presentation.activity.MainActivity
-import org.koin.android.ext.android.getKoin
 
 class AudioPlayerService : Service() {
-
-    private val playerManager: PlayerManager = getKoin().get()
 
     private val notifManager by lazy { applicationContext.getSystemService(NOTIFICATION_SERVICE) as NotificationManager }
 
@@ -28,24 +23,17 @@ class AudioPlayerService : Service() {
         return binder
     }
 
+
     override fun onCreate() {
         super.onCreate()
     }
 
 
-
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         if (!isStarted) {
-            when (intent?.action) {
-                MainActivity.START_INTENT -> makeForeground()
-                PLAY -> { }
-                PAUSE -> { }
-                PREV -> { }
-                NEXT -> { }
-            }
+            makeForeground()
             isStarted = true
         }
-
 
         return START_STICKY
     }
@@ -60,10 +48,11 @@ class AudioPlayerService : Service() {
             .setContentTitle("Track's name")
             .setContentText("Artist's name")
             .setLargeIcon(Icon.createWithResource(this, R.drawable.placeholder))
-            .addActionButton(PREV, R.drawable.previous, "Previous")
-            .addActionButton(PLAY, R.drawable.play, "Play")
-            .addActionButton(PAUSE, R.drawable.pause, "Pause")
-            .addActionButton(NEXT, R.drawable.next, "Next")
+            .addActionButton(PlayerConstants.ACTION_PREVIOUS, R.drawable.previous, "Previous")
+            .addActionButton(PlayerConstants.ACTION_PLAY, R.drawable.play, "Play")
+            .addActionButton(PlayerConstants.ACTION_PAUSE, R.drawable.pause, "Pause")
+            .addActionButton(PlayerConstants.ACTION_NEXT, R.drawable.next, "Next")
+            .addActionButton(PlayerConstants.ACTION_STOP_SERVICE, R.drawable.close, "Close")
             .setOngoing(true)
             .build()
 
@@ -75,18 +64,18 @@ class AudioPlayerService : Service() {
         @DrawableRes icon: Int,
         title: String
     ): Notification.Builder {
-        val intent = Intent(this@AudioPlayerService, AudioPlayerService::class.java)
-            .apply { action = actionConst }
-        val pauseIntent = PendingIntent.getService(
+        val intent = Intent(actionConst)
+        val bIntent = PendingIntent.getBroadcast(
             this@AudioPlayerService,
-            REQUEST_CODE,
+            PlayerConstants.REQUEST_CODE,
             intent,
-            PendingIntent.FLAG_NO_CREATE or PendingIntent.FLAG_IMMUTABLE
+            PendingIntent.FLAG_IMMUTABLE
         )
+
         return addAction(Notification.Action.Builder(
             Icon.createWithResource(this@AudioPlayerService, icon),
             title,
-            pauseIntent
+            bIntent
         ).build())
     }
 
@@ -104,11 +93,5 @@ class AudioPlayerService : Service() {
         private const val CHANNEL_NAME = "NotificationChannelName"
         private const val CHANNEL_ID = "1001"
         private const val ONGOING_ID = 101
-        private const val REQUEST_CODE = 0
-
-        private const val PLAY = "PLAY"
-        private const val PAUSE = "PAUSE"
-        private const val NEXT = "NEXT"
-        private const val PREV = "PREV"
     }
 }
