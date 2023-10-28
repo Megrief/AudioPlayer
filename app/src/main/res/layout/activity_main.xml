@@ -25,6 +25,82 @@
         app:layout_constraintTop_toBottomOf="@id/media_header"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:layout_constraintBottom_toTopOf="@id/player" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/player"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/content_list">
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/poster_iv"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/placeholder"
+            android:tint="@color/transparent_black"
+            app:layout_constraintDimensionRatio="w, 1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <TextView
+            android:id="@+id/tracks_name"
+            style="@style/FragmentPlayerText.TracksName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Name for song, maybe short maybe long"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/poster_iv" />
+
+        <TextView
+            android:id="@+id/artists_name"
+            style="@style/FragmentPlayerText.ArtistsName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Artist's name"
+            app:layout_constraintTop_toBottomOf="@id/tracks_name"
+            app:layout_constraintStart_toEndOf="@id/poster_iv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            style="@style/PlayerButton"
+            android:id="@+id/play_button"
+            android:layout_height="48dp"
+            android:src="@drawable/play"
+            app:layout_constraintTop_toBottomOf="@id/artists_name"
+            app:layout_constraintStart_toEndOf="@id/poster_iv"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <ImageButton
+            style="@style/PlayerButton"
+            android:id="@+id/pause_button"
+            android:src="@drawable/pause"
+            app:layout_constraintTop_toTopOf="@id/play_button"
+            app:layout_constraintBottom_toBottomOf="@id/play_button"
+            app:layout_constraintStart_toEndOf="@id/play_button" />
+
+        <ImageButton
+            style="@style/PlayerButton"
+            android:id="@+id/previous_button"
+            android:src="@drawable/previous"
+            app:layout_constraintTop_toTopOf="@id/play_button"
+            app:layout_constraintBottom_toBottomOf="@id/play_button"
+            app:layout_constraintStart_toEndOf="@id/pause_button" />
+
+        <ImageButton
+            style="@style/PlayerButton"
+            android:id="@+id/next_button"
+            android:src="@drawable/next"
+            app:layout_constraintTop_toTopOf="@id/play_button"
+            app:layout_constraintBottom_toBottomOf="@id/play_button"
+            app:layout_constraintStart_toEndOf="@id/previous_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
