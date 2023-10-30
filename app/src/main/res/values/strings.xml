@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">AudioPlayer</string>
     <string name="media">Медиатека</string>
+    <string name="need_permission_media">Для корректной работы приложения необходим доступ к аудиофайлам на устройстве</string>
+    <string name="need_permission_notifications">Для показа уведомлений требуется соответствующее разрешение</string>
 </resources>

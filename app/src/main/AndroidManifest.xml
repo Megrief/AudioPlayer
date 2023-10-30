@@ -18,20 +18,6 @@
         android:supportsRtl="true"
         android:theme="@style/Base.Theme.AudioPlayer"
         tools:targetApi="31">
-        <receiver
-            android:name=".presentation.AudioPlayerReceiver"
-            android:enabled="true"
-            android:exported="false">
-            <intent-filter>
-
-                <action android:name="player.action.PLAY" />
-                <action android:name="player.action.PAUSE" />
-                <action android:name="player.action.NEXT" />
-                <action android:name="player.action.PREV" />
-                <action android:name="player.action.START_SERVICE" />
-                <action android:name="player.action.STOP_SERVICE" />
-            </intent-filter>
-        </receiver>
 
         <service
             android:name=".presentation.service.AudioPlayerService"

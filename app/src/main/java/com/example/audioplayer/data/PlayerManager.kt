@@ -3,99 +3,54 @@ package com.example.audioplayer.data
 import android.content.Context
 import android.media.MediaPlayer
 import android.net.Uri
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.Job
-import kotlinx.coroutines.flow.single
-import kotlinx.coroutines.launch
 
 class PlayerManager(
-    private val mediaPlayer: MediaPlayer,
-    private val storageManager: StorageManager,
     private val context: Context
 ) {
-    private val scope = CoroutineScope(Dispatchers.IO + Job())
-    private var currentState = DEFAULT
-
-    private var _onNextListener: (() -> Long)? = null
-    private val onNextListener: () -> Long
-        get() = _onNextListener!!
-
-    private var _onPreviousListener: (() -> Long)? = null
-    private val onPreviousListener: () -> Long
-        get() = _onPreviousListener!!
-
-    init {
-        mediaPlayer.setOnPreparedListener {
-            currentState = PREPARED
-        }
-        mediaPlayer.setOnCompletionListener {
-            it.reset()
-            currentState = DEFAULT
-            scope.launch {
-                val uri = storageManager.getUriById(onNextListener()).single()
-                if (uri != null) play(uri)
-            }
-        }
-    }
-
-    fun configurePlayer(
-        onNextListener: () -> Long,
-        onPreviousListener: () -> Long
-    ) {
-        _onNextListener = onNextListener
-        _onPreviousListener = onPreviousListener
-    }
-
-    fun next() {
-        scope.launch {
-            val uri = storageManager.getUriById(onNextListener()).single()
-            if (uri != null) play(uri)
-        }
-    }
-
-    fun previous() {
-        scope.launch {
-            val uri = storageManager.getUriById(onPreviousListener()).single()
-            if (uri != null) play(uri)
-        }
-    }
+    private var lastUri: Uri? = null
+    private var currentState = PlayerState.DEFAULT
+    private var mediaPlayer: MediaPlayer? = null
+    var onCompletion: (() -> Unit)? = null
 
     fun play(uri: Uri) {
-        if (currentState == PLAYING || currentState == PAUSED) {
-            mediaPlayer.stop()
-            mediaPlayer.reset()
-            currentState = DEFAULT
+        if (uri != lastUri) {
+            releaseResources()
+            lastUri = uri
+            recreate()
+            mediaPlayer?.start()
+        } else {
+            if (currentState == PlayerState.PAUSED) {
+                mediaPlayer?.start()
+            }
         }
-        mediaPlayer.setDataSource(context, uri)
-        mediaPlayer.prepare()
-        mediaPlayer.start()
-        currentState = PLAYING
+        currentState = PlayerState.PLAYING
     }
 
-    fun playOnService() {
-        if (currentState == PAUSED) {
-            mediaPlayer.start()
-            currentState = PLAYING
-        }
-    }
     fun pause() {
-        if (currentState == PLAYING) {
-            mediaPlayer.pause()
-            currentState = PAUSED
+        if (currentState == PlayerState.PLAYING) {
+            mediaPlayer?.pause()
+            currentState = PlayerState.PAUSED
         }
     }
 
-    fun stop() {
-        mediaPlayer.stop()
-        mediaPlayer.reset()
-        currentState = DEFAULT
+    private fun recreate() {
+        mediaPlayer = MediaPlayer.create(context, lastUri)
+        mediaPlayer?.setOnCompletionListener {
+            onCompletion?.invoke()
+        }
     }
 
-    companion object {
-        private const val DEFAULT = 0
-        private const val PREPARED = 1
-        private const val PLAYING = 2
-        private const val PAUSED = 3
+    fun releaseResources() {
+        if (currentState == PlayerState.PLAYING || currentState == PlayerState.PAUSED) {
+            mediaPlayer?.stop()
+            mediaPlayer?.release()
+            currentState = PlayerState.DEFAULT
+        }
+    }
+
+    private enum class PlayerState {
+        PLAYING,
+        PAUSED,
+        DEFAULT
     }
 }

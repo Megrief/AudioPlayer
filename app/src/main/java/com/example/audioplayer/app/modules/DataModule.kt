@@ -1,7 +1,6 @@
 package com.example.audioplayer.app.modules
 
 import android.content.ContentResolver
-import android.media.MediaPlayer
 import com.example.audioplayer.data.PlayerManager
 import com.example.audioplayer.data.StorageManager
 import org.koin.android.ext.koin.androidContext
@@ -16,14 +15,8 @@ val dataModule = module {
 
     single {
         PlayerManager(
-            mediaPlayer = get(),
-            storageManager = get(),
             context = androidContext()
         )
-    }
-
-    factory {
-        MediaPlayer()
     }
 
     factory<ContentResolver> {

@@ -15,8 +15,6 @@ val presentationModule = module {
     }
 
     single {
-        AudioPlayerReceiver(
-            playerManager = get()
-        )
+        AudioPlayerReceiver()
     }
 }

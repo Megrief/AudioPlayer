@@ -17,9 +17,7 @@ class StorageManager(
         MediaStore.Audio.Media.DISPLAY_NAME,
         MediaStore.Audio.Media.ARTIST
     )
-
     private val mediaContentUri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI
-
     private val selection = MediaStore.Audio.Media._ID + " =?"
 
     fun getTrackFlow(): Flow<Track?> = flow {
@@ -40,25 +38,6 @@ class StorageManager(
             } ?: emit(null)
     }
 
-    fun getById(id: Long): Flow<Track?> = flow {
-        val selectionArgs = arrayOf(id.toString())
-        contentResolver
-            .query(mediaContentUri, projection, selection, selectionArgs, null)
-            ?.use { cursor ->
-                val columnId = cursor.getColumnIndex(MediaStore.Audio.Media._ID)
-                val columnTrack = cursor.getColumnIndex(MediaStore.Audio.Media.DISPLAY_NAME)
-                val columnArtist = cursor.getColumnIndex(MediaStore.Audio.Media.ARTIST)
-                if (cursor.moveToNext()) {
-                        val track = Track(
-                            id = cursor.getLong(columnId),
-                            trackName = cursor.getString(columnTrack),
-                            artistName = cursor.getString(columnArtist)
-                        )
-                        emit(track)
-                } else emit(null)
-            }
-    }
-
     fun getUriById(id: Long): Flow<Uri?> = flow {
         val selectionArgs = arrayOf(id.toString())
         contentResolver
@@ -69,5 +48,4 @@ class StorageManager(
                 }
             } ?: emit(null)
     }
-
 }

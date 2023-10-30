@@ -30,34 +30,62 @@ class MainVM(
     private val _listContent: MutableLiveData<List<Track>> = MutableLiveData(emptyList())
     val listContent: LiveData<List<Track>>
         get() = _listContent
+
     private var currentInd = -1
 
-    init {
+    fun configurePlayer() {
+        playerManager.onCompletion = {
+            listContent.value?.run {
+                viewModelScope.launch {
+                    currentInd = if (currentInd < lastIndex) currentInd + 1 else 0
+                    play(get(currentInd).id)
+                }
+            }
+        }
+    }
+
+    fun play(id: Long? = null) {
+        listContent.value?.run {
+            if (id != null) {
+                currentInd = indexOfFirst { it.id == id }
+            }
+            viewModelScope.launch(Dispatchers.IO) {
+                storageManager.getUriById(get(currentInd).id).single()?.also { uri ->
+                    playerManager.play(uri)
+                }
+            }
+        }
+    }
+
+    fun next() {
+        listContent.value?.run {
+            currentInd = if (currentInd < lastIndex) currentInd + 1 else 0
+            play(get(currentInd).id)
+        }
+    }
+
+    fun previous() {
+        listContent.value?.run {
+            currentInd = if (currentInd == 0) lastIndex else currentInd - 1
+            play(get(currentInd).id)
+        }
+    }
+
+    fun pause() {
+        playerManager.pause()
+    }
+
+    fun stop() {
+        playerManager.releaseResources()
+    }
+
+    fun getContent() {
         viewModelScope.launch(Dispatchers.IO) {
             _listContent.postValue(
                 storageManager.getTrackFlow().filterNotNull().toList()
             )
         }
     }
-
-    fun configurePlayer() {
-        val onNextListener = {
-            currentInd = if (currentInd < listContent.value!!.lastIndex) currentInd + 1 else 0
-            listContent.value!![currentInd].id
-        }
-        val onPreviousListener = {
-            currentInd = if (currentInd == 0) listContent.value!!.lastIndex else currentInd - 1
-            listContent.value!![currentInd].id
-        }
-        playerManager.configurePlayer(onNextListener, onPreviousListener)
-    }
-    fun play(id: Long) {
-        currentInd = listContent.value?.indexOfFirst { it.id == id } ?: -1
-        viewModelScope.launch(Dispatchers.IO) {
-            storageManager.getUriById(id).single()?.also { uri -> playerManager.play(uri) }
-        }
-    }
-
     fun startService(context: Context) {
         val intent = Intent(PlayerConstants.ACTION_START_SERVICE)
         context.sendBroadcast(intent)
@@ -74,16 +102,14 @@ class MainVM(
                 addAction(PlayerConstants.ACTION_STOP_SERVICE)
             }
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            context.registerReceiver(
-                bReceiver,
-                intentFilter,
-                RECEIVER_NOT_EXPORTED)
-        } else {
-            context.registerReceiver(
-                bReceiver,
-                intentFilter)
-        }
-
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) context.registerReceiver(
+            bReceiver,
+            intentFilter,
+            RECEIVER_NOT_EXPORTED
+        )
+        else context.registerReceiver(
+            bReceiver,
+            intentFilter
+        )
     }
 }

@@ -7,27 +7,19 @@ import android.app.PendingIntent
 import android.app.Service
 import android.content.Intent
 import android.graphics.drawable.Icon
-import android.os.Binder
 import android.os.IBinder
 import androidx.annotation.DrawableRes
 import com.example.audioplayer.R
 
 class AudioPlayerService : Service() {
 
-    private val notifManager by lazy { applicationContext.getSystemService(NOTIFICATION_SERVICE) as NotificationManager }
-
+    private val notificationManager by lazy { applicationContext.getSystemService(NOTIFICATION_SERVICE) as NotificationManager }
     private var isStarted = false
-    private val binder = AudioBinder()
+    private var notification: Notification? = null
 
-    override fun onBind(intent: Intent): IBinder {
-        return binder
+    override fun onBind(intent: Intent): IBinder? {
+        return null
     }
-
-
-    override fun onCreate() {
-        super.onCreate()
-    }
-
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
         if (!isStarted) {
@@ -40,9 +32,9 @@ class AudioPlayerService : Service() {
 
     private fun makeForeground() {
 
-        notifManager.createNotificationChannel(getNotificationChannel())
+        notificationManager.createNotificationChannel(getNotificationChannel())
 
-        val notification = Notification.Builder(this, CHANNEL_ID)
+        notification = Notification.Builder(this, CHANNEL_ID)
             .setSmallIcon(R.drawable.placeholder)
             .setStyle(Notification.DecoratedMediaCustomViewStyle())
             .addActionButton(PlayerConstants.ACTION_PREVIOUS, R.drawable.previous, "Previous")
@@ -79,12 +71,6 @@ class AudioPlayerService : Service() {
     private fun getNotificationChannel(): NotificationChannel =
         NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_HIGH)
             .apply { lockscreenVisibility = Notification.VISIBILITY_PUBLIC }
-
-    inner class AudioBinder : Binder() {
-        fun getService(): AudioPlayerService {
-            return this@AudioPlayerService
-        }
-    }
 
     companion object {
         private const val CHANNEL_NAME = "NotificationChannelName"
