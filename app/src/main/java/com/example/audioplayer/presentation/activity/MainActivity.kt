@@ -4,6 +4,7 @@ import android.Manifest.permission.POST_NOTIFICATIONS
 import android.Manifest.permission.READ_EXTERNAL_STORAGE
 import android.Manifest.permission.READ_MEDIA_AUDIO
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -64,27 +65,33 @@ class MainActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     private fun onTiramisu() {
-        val requestPermission = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { results ->
-            results[READ_MEDIA_AUDIO]?.also { isGranted ->
-                if (isGranted) viewModel.getContent()
-                else Toast.makeText(this, getString(R.string.need_permission_media), Toast.LENGTH_SHORT).show()
-            }
+        if (checkCallingOrSelfPermission(READ_MEDIA_AUDIO) != PackageManager.PERMISSION_GRANTED
+            || checkCallingOrSelfPermission(POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+            val requestPermission = registerForActivityResult(ActivityResultContracts.RequestMultiplePermissions()) { results ->
+                results[READ_MEDIA_AUDIO]?.also { isGranted ->
+                    if (isGranted) viewModel.getContent()
+                    else Toast.makeText(this, getString(R.string.need_permission_media), Toast.LENGTH_SHORT).show()
+                }
 
-            results[POST_NOTIFICATIONS]?.also { isGranted ->
-                if (!isGranted) Toast.makeText(this, getString(R.string.need_permission_notifications), Toast.LENGTH_SHORT).show()
+                results[POST_NOTIFICATIONS]?.also { isGranted ->
+                    if (!isGranted) Toast.makeText(this, getString(R.string.need_permission_notifications), Toast.LENGTH_SHORT).show()
+                }
             }
+            requestPermission.launch(arrayOf(READ_MEDIA_AUDIO, POST_NOTIFICATIONS))
         }
-        requestPermission.launch(arrayOf(READ_MEDIA_AUDIO, POST_NOTIFICATIONS))
+
     }
 
     private fun onOlder() {
-        val requestPermission = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
-            if (isGranted) viewModel.getContent()
-            else Toast.makeText(this, getString(R.string.need_permission_media), Toast.LENGTH_SHORT).show()
-
+        if (checkCallingOrSelfPermission(READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+            val requestPermission = registerForActivityResult(ActivityResultContracts.RequestPermission()) { isGranted ->
+                if (isGranted) viewModel.getContent()
+                else Toast.makeText(this, getString(R.string.need_permission_media), Toast.LENGTH_SHORT).show()
+            }
+            requestPermission.launch(READ_EXTERNAL_STORAGE)
         }
-        requestPermission.launch(READ_EXTERNAL_STORAGE)
     }
+
     private fun configurePlayerView() {
         with(binding) {
             playButton.setOnClickListener {
