@@ -1,9 +1,24 @@
-<mxfile host="app.diagrams.net" modified="2023-11-18T07:11:46.214Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0 (Edition Yx 05)" etag="AcecN_rtCTPzOf2JPoEG" version="22.1.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-20T05:53:54.209Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0 (Edition Yx 05)" etag="ImXj7oDYmRUdclsUilxJ" version="22.1.2" type="github">
   <diagram name="Страница — 1" id="RygN27f7wWlG2719hhbA">
-    <mxGraphModel dx="3014" dy="2462" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="5747" dy="4079" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="-D2j0t36EasNuuJK0pfv-302" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-293" target="-D2j0t36EasNuuJK0pfv-298">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-303" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-293" target="-D2j0t36EasNuuJK0pfv-296">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-309" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-293" target="-D2j0t36EasNuuJK0pfv-305">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-311" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-293" target="-D2j0t36EasNuuJK0pfv-307">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-293" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="20.5" y="1440" width="80" height="80" as="geometry" />
+        </mxCell>
         <mxCell id="-D2j0t36EasNuuJK0pfv-47" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120.5" y="-100" width="380" height="130" as="geometry" />
         </mxCell>
@@ -102,8 +117,8 @@
         </mxCell>
         <mxCell id="-D2j0t36EasNuuJK0pfv-80" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#FF1D0D;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="20" y="-110" as="sourcePoint" />
-            <mxPoint x="1362.2222222222222" y="-110" as="targetPoint" />
+            <mxPoint x="-280" y="-110" as="sourcePoint" />
+            <mxPoint x="2082.3529411764707" y="-110" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="-D2j0t36EasNuuJK0pfv-81" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -174,8 +189,8 @@
         </mxCell>
         <mxCell id="-D2j0t36EasNuuJK0pfv-129" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#FF1D0D;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="20" y="330" as="sourcePoint" />
-            <mxPoint x="1362.2222222222222" y="330" as="targetPoint" />
+            <mxPoint x="-280" y="320" as="sourcePoint" />
+            <mxPoint x="2041.5384615384614" y="320" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="-D2j0t36EasNuuJK0pfv-130" value="SortType:&lt;br&gt;RELEVANCY,&lt;br&gt;POPULARITY,&lt;br&gt;DATE" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeColor=#000000;fillColor=#f5f5f5;fontColor=#000000;" vertex="1" parent="1">
@@ -238,11 +253,11 @@
         <mxCell id="-D2j0t36EasNuuJK0pfv-157" value="GetDataRepoRx" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
           <mxGeometry x="140.5" y="-330" width="120" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="-D2j0t36EasNuuJK0pfv-168" value="&lt;h1&gt;SharedPrefsRepo&lt;/h1&gt;&lt;div&gt;Репозиторий для хранения текущих настроек: Фильтры, Категория, Тип данных для поиска. Для каждого типа данных свой репозиторий!&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#F8EBE7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-159.5" y="-240" width="260" height="110" as="geometry" />
+        <mxCell id="-D2j0t36EasNuuJK0pfv-168" value="&lt;h1&gt;SharedPrefsRepo&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Репозиторий для хранения текущих настроек: Фильтры, Категория, Тип данных для поиска. Для каждого типа данных свой репозиторий!&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#F8EBE7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-210" y="-240" width="310.5" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="-D2j0t36EasNuuJK0pfv-169" value="&lt;h1&gt;SearchRepo&lt;/h1&gt;&lt;div&gt;Используется для получения списка новостей. Если поиск производится с экрана Search вызывается метод search(query: String) если необходимо просто получить список статей соответствующих фильтрам использовать метод get()&lt;/div&gt;&lt;div&gt;Наличие фильтров проверяется в любом методе репозитория. т.к. поиск должен производиться в соответствии с содержимым текущей страницы.&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#F8EBE7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-159.5" y="-470" width="260" height="210" as="geometry" />
+        <mxCell id="-D2j0t36EasNuuJK0pfv-169" value="&lt;h1&gt;SearchRepo&lt;/h1&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Используется для получения списка новостей. Если поиск производится с экрана Search вызывается метод search(query: String) если необходимо просто получить список статей соответствующих фильтрам использовать метод get()&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Наличие фильтров проверяется в любом методе репозитория. т.к. поиск должен производиться в соответствии с содержимым текущей страницы.&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#F8EBE7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-159.5" y="-500" width="260" height="240" as="geometry" />
         </mxCell>
         <mxCell id="-D2j0t36EasNuuJK0pfv-170" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="120.5" y="350.5" width="399.5" height="160" as="geometry" />
@@ -537,6 +552,161 @@
         </mxCell>
         <mxCell id="-D2j0t36EasNuuJK0pfv-287" value="&lt;h1&gt;RootActivity&lt;/h1&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Корень приложения отсюда производится вся навигация.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Отсутствует логика.&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Все операции происходят во фрагментах&amp;nbsp;&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#F8EBE7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="-159.5" y="1200" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-288" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;strokeColor=#FF1D0D;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-560" y="1360" as="sourcePoint" />
+            <mxPoint x="1760" y="1360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-291" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Navigation&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="141" y="1370" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-292" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Root&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30.5" y="1465" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-318" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-294" target="-D2j0t36EasNuuJK0pfv-312">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="271" y="1380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-319" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-294" target="-D2j0t36EasNuuJK0pfv-314">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-320" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-294" target="-D2j0t36EasNuuJK0pfv-316">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-294" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190" y="1440" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-295" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Headlines&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="185" y="1465.25" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-323" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-296" target="-D2j0t36EasNuuJK0pfv-321">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-296" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190.5" y="1720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-297" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Sources&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="190.5" y="1745" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-332" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-298" target="-D2j0t36EasNuuJK0pfv-330">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-298" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190.5" y="1890" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-299" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Saved&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="200.5" y="1915" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-301" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-293" target="-D2j0t36EasNuuJK0pfv-294">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-335" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-305" target="-D2j0t36EasNuuJK0pfv-333">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-305" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190.5" y="2040" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-306" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Search&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195.5" y="2065" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-307" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="190.5" y="2200" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-308" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Filters&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="195.5" y="2225" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-336" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-312" target="-D2j0t36EasNuuJK0pfv-325">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-312" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1400" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-313" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Content&lt;br&gt;Articles&lt;br&gt;&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="320.5" y="1413.25" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-337" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-314" target="-D2j0t36EasNuuJK0pfv-325">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-314" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1500" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-315" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Content&lt;br&gt;Articles&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1515.25" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-338" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-316" target="-D2j0t36EasNuuJK0pfv-325">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-316" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1600" width="80.25" height="80.25" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-317" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Content&lt;br&gt;Articles&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1615.25" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-329" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-321" target="-D2j0t36EasNuuJK0pfv-327">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-321" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320.25" y="1720" width="80.5" height="80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-322" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Content&lt;br&gt;Sources&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="320.5" y="1735.25" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-325" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="677" y="1719.5" width="80.5" height="80.5" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-326" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Article&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="682.25" y="1744.75" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-339" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-327" target="-D2j0t36EasNuuJK0pfv-325">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-327" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="440.5" y="1720" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-328" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Content&lt;br&gt;Articles&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="440.75" y="1735.25" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-340" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-330" target="-D2j0t36EasNuuJK0pfv-325">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-330" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="319.75" y="1890" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-331" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Content&lt;br&gt;Articles&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="1905.25" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-341" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-D2j0t36EasNuuJK0pfv-333" target="-D2j0t36EasNuuJK0pfv-325">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-333" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="320.25" y="2040" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-334" value="&lt;b&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Content&lt;br&gt;Articles&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;imageAspect=0;" vertex="1" parent="1">
+          <mxGeometry x="320.5" y="2055.25" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-342" value="" style="whiteSpace=wrap;html=1;fillColor=none;strokeColor=#ff0000;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="300" y="1390" width="259" height="835" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-343" value="&lt;h1&gt;Content&lt;/h1&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Абсолютно идентичные фрагменты.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Только принимают на вход список статей или источников и отображают его на экране.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Логика работы пагинации общая для всех, кроме экрана сохраненных, там данные получаются из БД.&amp;nbsp;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#F8EBE7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="1390" width="260" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-344" value="" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="20.5" y="1560" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-345" value="&lt;span style=&quot;font-size: 14px;&quot;&gt;&lt;b&gt;Service&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="25.5" y="1585" width="70" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-346" value="&lt;h1&gt;Service или Scheduler&amp;nbsp;&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;При запуске приложения проверяет БД на наличие статей с истекшим сроком годности (больше 14 дней)&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#F8EBE7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-260" y="1560" width="260" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-347" value="&lt;h1&gt;Порядок работ:&lt;/h1&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;1. Экран RootActivity:&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Верстка&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- SplashScreen - реализация с использованием официальной библиотеки Jetpack&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Toolbar (AppBar) - добавление нескольких функциональных кнопок на Toolbar.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- BottomNavigationView - навигация с заглушками. Реализация кастомного вида &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;кнопок в выбранном состоянии.&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Контейнер для запуска фрагментов.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Учесть возможность скрывать Toolbar и BottomNavigationView для экранов, &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;которые в них не нуждаются: Article, Filters, Search.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;2. Экран Headlines:&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Верстка&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Реализация TabLayout с заглушками вместо экранов Content&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- ViewPager2 -&amp;nbsp; запуск фрагмента производится в зависимости от результата &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;запроса в Апи!&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Константы запросов в сеть для каждого экрана.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;3. Экран OnSuccess:&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- RecyclerView&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Adapter&#39;ы и ViewHolder&#39;ы для каждого типа данных&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- DelegateAdapter by HannesDorfmann&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- DiffUtil&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Мок список для проверки корректного отображения любого возможного типа &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;объектов.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;4. Экран OnError:&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Простая верстка экрана.&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Изображение и сообщение о типе ошибки.&amp;nbsp;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Тип ошибки должен передаваться во фрагмент или сохраняться в &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;sharedPreferences и получаться уже внутри фрагмента (но это нарушит идею &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;фрагментов без логики, лишь отображающих пришедшие данные)&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;5. Реализация интерфейсов и репозитория для запросов в сеть:&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Два типа запросов: Источник, Статья&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Тело запроса формируется динамически в репозитории.&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Данные, в соответствии с которыми формируется запрос получаются из &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;SharedPreferences, или передаются в конструкторе метода (в случае с &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;поиском)&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;- Для получения данных без текстового запроса используется метод get() с &lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;текстовым запросом search()&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#d5e8d4;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;align=left;" vertex="1" parent="1">
+          <mxGeometry x="920" y="1400" width="580" height="770" as="geometry" />
+        </mxCell>
+        <mxCell id="-D2j0t36EasNuuJK0pfv-349" value="&lt;h1&gt;SearchRepo&lt;/h1&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Также должен принимать в конструктор UseCases необходимые для получения данных для формирования запроса&lt;/font&gt;&lt;/div&gt;" style="text;html=1;strokeColor=#000000;fillColor=#F8EBE7;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="450" y="-420" width="210" height="140" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
