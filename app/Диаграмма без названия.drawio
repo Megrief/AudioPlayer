@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-29T04:16:44.451Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0 (Edition Yx 08)" etag="G_3wpWW-ziPLlh7ndDGu" version="22.1.4" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-29T05:15:11.923Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36 OPR/105.0.0.0 (Edition Yx 08)" etag="PUA8Vpwzb560AMi4KUD3" version="22.1.4" type="github">
   <diagram name="Страница — 1" id="RygN27f7wWlG2719hhbA">
     <mxGraphModel dx="1761" dy="1791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -754,28 +754,25 @@
           <mxGeometry x="500" y="2630" width="380" height="40" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-4" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-690" y="-1140" width="380" height="130" as="geometry" />
+          <mxGeometry x="-550" y="-1140" width="150" height="200" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-5" value="StoreDataRepo" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-510" y="-1040" width="190" height="20" as="geometry" />
+          <mxGeometry x="-540" y="-970" width="130" height="20" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-6" value="DeleteDataRepo" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="-1040" width="130" height="20" as="geometry" />
+          <mxGeometry x="-540" y="-1030" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="74UCtBXDDs38_JtHePus-7" value="GetDataRepoCoroutines" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-510" y="-1100" width="190" height="20" as="geometry" />
+        <mxCell id="74UCtBXDDs38_JtHePus-8" value="GetDataRepo" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="-1090" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="74UCtBXDDs38_JtHePus-8" value="GetDataRepoRx" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="-1100" width="130" height="20" as="geometry" />
+        <mxCell id="74UCtBXDDs38_JtHePus-9" value="GetDataByIdRepo" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="-1000" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="74UCtBXDDs38_JtHePus-9" value="GetDataByIdRepoCoroutines" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-510" y="-1069" width="190" height="20" as="geometry" />
+        <mxCell id="74UCtBXDDs38_JtHePus-10" value="SearchDataRepo" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-540" y="-1059" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="74UCtBXDDs38_JtHePus-10" value="SearchDataRepoRx" style="text;html=1;strokeColor=#000000;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="-1069" width="130" height="20" as="geometry" />
-        </mxCell>
-        <mxCell id="74UCtBXDDs38_JtHePus-11" value="Base Repositories" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
-          <mxGeometry x="-600" y="-1130" width="190" height="20" as="geometry" />
+        <mxCell id="74UCtBXDDs38_JtHePus-11" value="Base Repos Interfaces" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="-545" y="-1130" width="140" height="20" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-13" value="Entities" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-530" y="-890" width="100" height="40" as="geometry" />
@@ -790,37 +787,37 @@
           <mxGeometry x="-377.5" y="-890" width="125" height="30" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-29" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="-280" y="-1140" width="350" height="200" as="geometry" />
+          <mxGeometry x="-377.5" y="-1140" width="287.5" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="74UCtBXDDs38_JtHePus-30" value="&lt;b&gt;ArticleDbRepoCoroutines&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-195" y="-1130" width="160" height="20" as="geometry" />
+        <mxCell id="74UCtBXDDs38_JtHePus-30" value="&lt;b&gt;ArticleDbRepo&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-313.75" y="-1130" width="160" height="20" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-31" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-270" y="-1100" width="180" height="150" as="geometry" />
+          <mxGeometry x="-367.5" y="-1100" width="127.5" height="150" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-32" value="&lt;b&gt;Implements&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-250" y="-1100" width="120" height="20" as="geometry" />
+          <mxGeometry x="-363.75" y="-1100" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-33" value="StoreDataRepo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="-1070" width="160" height="20" as="geometry" />
+          <mxGeometry x="-357.5" y="-1070" width="107.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="-80" y="-1100" width="140" height="150" as="geometry" />
+          <mxGeometry x="-230" y="-1100" width="127.5" height="150" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-35" value="&lt;b&gt;Constructor&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-70" y="-1100" width="120" height="20" as="geometry" />
+          <mxGeometry x="-226.25" y="-1100" width="120" height="20" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-36" value="ArticleDbDao" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="-70" y="-1070" width="120" height="20" as="geometry" />
+          <mxGeometry x="-220" y="-1070" width="107.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-37" value="DeleteDataRepo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="-1040" width="160" height="20" as="geometry" />
+          <mxGeometry x="-357.5" y="-1040" width="107.5" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="74UCtBXDDs38_JtHePus-38" value="GetDataRepoCoroutines" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="-1010" width="160" height="20" as="geometry" />
+        <mxCell id="74UCtBXDDs38_JtHePus-38" value="GetDataRepo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-357.5" y="-1010" width="107.5" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="74UCtBXDDs38_JtHePus-39" value="GetDataByIdRepoCoroutines" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
-          <mxGeometry x="-260" y="-980" width="160" height="20" as="geometry" />
+        <mxCell id="74UCtBXDDs38_JtHePus-39" value="GetDataByIdRepo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=default;strokeColor=default;" vertex="1" parent="1">
+          <mxGeometry x="-357.5" y="-980" width="107.5" height="20" as="geometry" />
         </mxCell>
         <mxCell id="74UCtBXDDs38_JtHePus-40" value="Presentation:&lt;br&gt;ViewModels&lt;br&gt;Presenters" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-710" y="-910" width="140" height="130" as="geometry" />
